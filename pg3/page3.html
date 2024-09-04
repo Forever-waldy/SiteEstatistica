@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é e como usar Desvio Padrão e Variância</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/icon.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="../img/icon.png" alt="Ícone do Site" class="header-icon"> 
+        <h1>O que é e como usar Desvio Padrão e Variância</h1>
+        <nav>
+            <ul>
+                <li><a href="../pg1/page1.html">Introdução</a></li>
+                <li><a href="../pg2/page2.html">Media,Moda,Mediana</a></li>
+                <li><a href="../pg3/page3.html">Desvio Padrão, Variancia</a></li>
+                <li><a href="../sobre/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="desvio-padrao">
+        <h2>O que é Desvio Padrão?</h2>
+        <p>O desvio padrão é uma medida de dispersão que indica o quanto os valores de um conjunto de dados diferem da média. Um desvio padrão baixo indica que os valores tendem a estar próximos da média, enquanto um desvio padrão alto indica que os valores estão mais espalhados.</p>
+        <p><strong>Exemplo:</strong> Se os salários de um grupo de pessoas têm um desvio padrão baixo, a maioria das pessoas ganha valores próximos à média salarial do grupo.</p>
+    </section>
+
+    <section id="variancia">
+        <h2>O que é Variância?</h2>
+        <p>A variância é a média dos quadrados dos desvios em relação à média. É uma medida que indica o grau de dispersão dos dados. A variância é o quadrado do desvio padrão.</p>
+        <p><strong>Exemplo:</strong> A variância é usada na análise de risco para determinar a volatilidade de retornos de investimentos, por exemplo.</p>
+    </section>
+
+    <section id="calculadora">
+        <h2>Calculadora de Desvio Padrão e Variância</h2>
+        <p>Insira os dados (separados por vírgula, espaço ou ponto e vírgula):</p>
+        <input type="text" id="data-input" placeholder="Exemplo: 1, 2, 2, 3, 4, ..." required autocomplete="off">
+        <button onclick="calculateStats()">Calcular</button>
+
+        <div id="resultados">
+            <p><strong>Desvio Padrão:</strong> <span id="stddev"></span></p>
+            <p><strong>Variância:</strong> <span id="variance"></span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Seminário sobre Estatística</p>
+    </footer>
+
+    <script src="./script3.js"></script>
+    
+</body>
+</html>

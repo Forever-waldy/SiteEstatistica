@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é e para que serve a Estatística</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/icon.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="../img/icon.png" alt="Ícone do Site" class="header-icon"> 
+        <h1>O que é e para que serve a Estatística</h1>
+        <nav>
+            <ul>
+                <li><a href="../pg1/page1.html">Introdução</a></li>
+                <li><a href="../pg2/page2.html">Media,Moda,Mediana</a></li>
+                <li><a href="../pg3/page3.html">Desvio Padrão, Variancia</a></li>
+                <li><a href="../sobre/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Introdução à Estatística</h2>
+        <p>A Estatística é a ciência que estuda a coleta, análise, interpretação e apresentação de dados. Ela nos ajuda a transformar grandes volumes de informações em conhecimento útil, facilitando a tomada de decisões informadas e a compreensão de fenômenos complexos.</p>
+        <p>Utilizando métodos e técnicas específicas, a Estatística permite identificar padrões, relacionar variáveis e prever tendências, tornando-se uma ferramenta indispensável em áreas como pesquisa científica, gestão empresarial e políticas públicas.</p>
+    </section>
+    
+    <section id="utilizacao">
+        <h2>Para que serve a Estatística?</h2>
+        <ul>
+            <li><strong>Compreensão Profunda:</strong> A Estatística ajuda a entender melhor fenômenos e comportamentos ao analisar dados de forma sistemática.</li>
+            <li><strong>Tomada de Decisões:</strong> Fornece informações baseadas em evidências, ajudando a tomar decisões mais acertadas e a formular estratégias eficazes.</li>
+            <li><strong>Identificação de Padrões:</strong> Facilita a identificação de tendências e padrões nos dados, o que é essencial para prever futuros comportamentos e resultados.</li>
+            <li><strong>Avaliação de Impacto:</strong> Permite avaliar a eficácia de políticas e intervenções, ajudando a ajustar estratégias para melhores resultados.</li>
+        </ul>
+    </section>
+    
+    <section id="exemplos">
+        <h2>Exemplos de Aplicação da Estatística</h2>
+        <ul>
+            <li><strong>Medicina:</strong> A Estatística é crucial em estudos clínicos para avaliar a eficácia de tratamentos e medicamentos, assim como para analisar dados de saúde pública.</li>
+            <li><strong>Economia:</strong> Economistas utilizam a Estatística para prever tendências econômicas, analisar o impacto de políticas e avaliar o desempenho de mercados.</li>
+            <li><strong>Esportes:</strong> No esporte, a Estatística ajuda a analisar o desempenho de atletas e equipes, identificar pontos fortes e fracos e otimizar estratégias de jogo.</li>
+        </ul>
+    </section>
+ 
+    <section id="graficos">
+        <h2>Visualização de Dados com Gráficos</h2>
+        <p>Os gráficos são ferramentas visuais essenciais na Estatística para apresentar dados de maneira clara e compreensível. Eles ajudam a ilustrar padrões, comparações e distribuições, facilitando a interpretação dos resultados.</p>
+        <p>Os dois tipos de gráficos exibidos abaixo são amplamente utilizados para análises estatísticas:</p>
+        <ul>
+            <li><strong>Gráfico de Barras:</strong> Ideal para comparar diferentes categorias ou grupos, mostrando a magnitude de cada categoria de forma visual.</li>
+            <li><strong>Gráfico de Pizza:</strong> Utilizado para mostrar a proporção de cada parte em relação ao todo, facilitando a visualização das partes constituintes de um conjunto.</li>
+        </ul>
+        <div class="chart-container">
+            <canvas id="barChart" width="400" height="200"></canvas>
+            <canvas id="pieChart" width="200" height="200"></canvas> <!-- Gráfico de Pizza -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Seminário sobre Estatística</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

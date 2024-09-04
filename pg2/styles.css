@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #464646; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto */
+}
+
+.header-icon {
+    position: absolute;
+    top: 15px; /* Ajuste conforme necessário */
+    left: 60px; /* Ajuste conforme necessário */
+    width: 200px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto; /* Mantém a proporção do ícone */
+}
+
+header {
+    background-color: #202020;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #ffffff;
+    color: #202020; /* Cor do texto nas seções */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #202020;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #202020; /* Borda escura */
+    border-radius: 8px; /* Cantos arredondados do input */
+    font-size: 16px;
+    width: calc(100% - 24px); /* Largura do input */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #202020; /* Cor escura do botão */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+button:hover {
+    background-color: #ffffff; /* Cor branca quando o botão é hover */
+    color: #202020; /* Cor escura do texto quando o botão é hover */
+}
+
+#calculadora {
+    text-align: center; /* Centraliza o conteúdo dentro da seção de calculadora */
+    max-width: 500px;
+}
+
+#calculadora input[type="text"] {
+    padding: 12px;
+    border: 2px solid #202020; /* Borda escura */
+    border-radius: 8px; /* Cantos arredondados do input */
+    font-size: 16px;
+    width: calc(100% - 24px); /* Largura do input */
+    margin-bottom: 10px; /* Espaçamento abaixo do input */
+}
+
+#calculadora button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4b4747; /* Cor escura do botão */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+}
+
+#calculadora button:hover {
+    background-color: #202020; /* Cor branca quando o botão é hover */
+    color: #ffffff; /* Cor escura do texto quando o botão é hover */
+}
+
+#results {
+    background: #f4f5f7; /* Cor de fundo para a seção de resultados */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    color: #202020; /* Cor do texto nos resultados */
+}

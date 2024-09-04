@@ -1,0 +1,121 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 95%;
+    width: 100%;
+    overflow: hidden; /* Remove a rolagem */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.site-icon {
+    width: 250px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 5px; /* Margem superior para centralizar o ícone */
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%; /* Para garantir que o conteúdo ocupe toda a largura */
+}
+
+header {
+    background-color: #ffffff;
+    color: #202020;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 1200px; /* Limita a largura máxima do header */
+    width: 100%; /* Faz o header ocupar 100% da largura disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em; /* Tamanho grande para o título */
+    line-height: 1.2;
+}
+
+header .descricao {
+    font-size: 1.2em; /* Tamanho da fonte da descrição */
+    margin-top: 20px; /* Margem acima da descrição */
+    margin-bottom: 20px; /* Margem abaixo da descrição */
+}
+
+#entrada {
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #ffffff;
+    color: #202020;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 3px 0;
+    background-color: #202020;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+}
+
+.falling-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Permite clicar nos botões através das estrelas */
+}
+
+.star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    clip-path: polygon(50% 0%, 61% 25%, 100% 25%, 75% 50%, 85% 75%, 50% 50%, 15% 75%, 25% 50%, 0% 25%, 39% 25%);
+    opacity: 1;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100vw, 100vh) rotate(360deg);
+        opacity: 0;
+    }
+}

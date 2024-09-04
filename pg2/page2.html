@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é e como usar Média, Mediana e Moda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/icon.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="../img/icon.png" alt="Ícone do Site" class="header-icon">  
+        <h1>O que é e como usar Média, Mediana e Moda</h1>
+        <nav>
+            <ul>
+                <li><a href="../pg1/page1.html">Introdução</a></li>
+                <li><a href="../pg2/page2.html">Média, Moda,Mediana</a></li>
+                <li><a href="../pg3/page3.html">Desvio Padrão, Variância</a></li>
+                <li><a href="../sobre/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="media">
+        <h2>O que é Média?</h2>
+        <p>A média aritmética, frequentemente chamada de média, é uma medida de tendência central que representa o valor médio de um conjunto de dados. Para calculá-la, você soma todos os valores do conjunto e divide o resultado pelo número total de elementos.</p>
+        <p><strong>Fórmula:</strong> Média = (Σx) / n</p>
+        <p><strong>Exemplo:</strong> Suponha que você tem as notas 7, 8 e 9. </p>
+        <p>Para encontrar a média, você soma os valores: 7 + 8 + 9 = 24, e divide pelo número de notas:</p>     
+        <p>24 / 3 = 8. Portanto, a média das notas é 8.</p>
+    </section>
+
+    <section id="mediana">
+        <h2>O que é Mediana?</h2>
+        <p>A mediana é a medida de tendência central que divide um conjunto de dados ordenados em duas partes iguais. Se o número de elementos for ímpar, a mediana é o valor central. Se for par, a mediana é a média dos dois valores centrais.</p>
+        <p><strong>Fórmula:</strong> Mediana = valor central (se ímpar) ou (valor central inferior + valor central superior) / 2 (se par)</p>
+        <p><strong>Exemplo:</strong> Para a sequência de números 1, 3, 7, 9, 15, a mediana é 7, pois o número 7 é o valor do meio.</p>
+        <p>Para a sequência 1, 2, 3, 4, 5, 6, a mediana é (3 + 4) / 2 = 3.5, pois é a média dos dois valores centrais (3 e 4).</p>
+    </section>
+
+    <section id="moda">
+        <h2>O que é Moda?</h2>
+        <p>A moda é a medida de tendência central que indica o valor que ocorre com maior frequência em um conjunto de dados. Um conjunto de dados pode ter uma única moda, várias modas ou nenhuma moda, dependendo da frequência dos valores.</p>
+        <p><strong>Fórmula:</strong> Moda = valor mais frequente.</p>
+        <p><strong>Exemplo:</strong> Para o conjunto de dados 7, 8, 8, 9, 10, a moda é 8. Pois é o valor que aparece mais vezes.</p>
+        <p>Se você tiver o conjunto 1, 2, 2, 3, 3, 4, então os valores 2 e 3 são modas, pois ambos aparecem com a mesma frequência máxima.</p>
+    </section>
+
+    <section id="calculadora">
+        <h2>Calculadora de Média, Mediana e Moda</h2>
+        <p>Insira os dados (separados por vírgula, espaço ou ponto e vírgula):</p>
+        <input type="text" id="data-input" placeholder="Exemplo: 1, 2, 2, 3, 4" required autocomplete="off">
+        <button onclick="calculateStats()">Calcular</button>
+
+        <div id="results">
+            <p><strong>Média Aritmética:</strong> <span id="mean"></span></p>
+            <p><strong>Mediana:</strong> <span id="median"></span></p>
+            <p><strong>Moda:</strong> <span id="mode"></span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Seminário sobre Estatística</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
